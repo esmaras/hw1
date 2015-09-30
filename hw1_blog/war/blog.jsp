@@ -73,7 +73,11 @@ to include your name with greetings you post.</p>
     }
 %>
 
+<<<<<<< HEAD
     <form action="/blogpost" method="post">
+=======
+    <form action="/ofysign" method="post">
+>>>>>>> 38002625f46a6d6a9913bce26f9a9796bf7abb3e
       <div><textarea name="content" rows="3" cols="60"></textarea></div>
       <div><input type="submit" value="Post Greeting" /></div>
       <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
