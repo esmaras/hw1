@@ -27,3 +27,51 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 !SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2015-09-29 17:31:47.819
 !MESSAGE Provided SVN information does not match that on disk for project 'hw1'.
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2015-09-29 21:43:04.389
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.9.25
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2015-09-29 21:43:04.567
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.6.0
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:43.669
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2015-09-29 21:44:43.830
+!MESSAGE Could not auto-share project hw1_blog
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'hw1_blog'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2015-09-29 21:44:43.830
+!MESSAGE Provided SVN information does not match that on disk for project 'hw1_blog'.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-09-29 21:44:44.104
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.122
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.603
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.634
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.664
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.728
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.758
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 21:44:45.787
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 21:44:48.393
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
