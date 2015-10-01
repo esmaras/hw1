@@ -1,8 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.hw1.blog.BlogPostServlet" %>
 <%@ page import="com.hw1.blog.Post" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.Collections" %>
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
 <%@ page import="com.google.appengine.api.users.UserServiceFactory" %>
@@ -35,44 +33,19 @@
 <p>Hello!
 <a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
 to make a post.</p>
+<br></br>
+<br></br>
 <%
     }
 %>
 
-<%
-    ObjectifyService.register(Post.class);
-    List<Post> posts = ObjectifyService.ofy().load().type(Post.class).list();
-    Collections.sort(posts);
-    
-    if (posts.isEmpty()) {
-        %>
-        <p>No posts here :(</p>
-        <%
-    } else {
-        for (Post Post : posts) {
-            if (Post.getUser() == null) {
-                %>
-                <p>An anonymous person wrote:</p>
-                <%
-            } else {
-                pageContext.setAttribute("Post_user", Post.getUser());
-                %>
-                <p><b>${fn:escapeXml(Post_user.nickname)}</b> wrote:</p>
-                <%
-            }
-            pageContext.setAttribute("Post_title", Post.getTitle());
-            pageContext.setAttribute("Post_content", Post.getContent());
-            %>
-            <blockquote>
-                <h1>${fn:escapeXml(Post_title)}</h1>
-                <p>${fn:escapeXml(Post_content)}</p>
-            </blockquote>
-            <%
-        }
-    }
-%>
-
-	<a href="/createpost.jsp">New Post</a>
+    <form action="/blogpost" method="post">
+      <div><textarea name="title" rows="1" cols="20" style="resize:none"></textarea></div>
+      <br></br>
+      <div><textarea name="content" rows="5" cols="60"></textarea></div>
+      <div><input type="submit" value="New Post"/></div>
+      <input type="hidden" name="blogName" value="${fn:escapeXml(blogName)}"/>
+    </form>
 
   </body>
 </html>
