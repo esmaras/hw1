@@ -75,3 +75,104 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 !ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 21:44:48.393
 !MESSAGE Datanucleus enhancer terminated with exit code 1.
 Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 22:41:30.495
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2015-09-29 22:41:57.196
+!MESSAGE Could not stop source viewer server.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.initLogging(JettyServer.java:40)
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.<clinit>(JettyServer.java:30)
+	at com.google.gwt.eclipse.core.GWTPlugin.stop(GWTPlugin.java:147)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Logging bundle must not be null.
+	at org.eclipse.core.internal.runtime.Log.<init>(Log.java:30)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:351)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:1017)
+	at com.google.gdt.eclipse.platform.jetty.JettyEclipseLogger.<clinit>(JettyEclipseLogger.java:35)
+	... 20 more
+!SESSION 2015-09-29 22:49:36.605 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/shark89fish/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/shark89fish/hw1 -product org.eclipse.epp.package.java.product -keyring /Users/shark89fish/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-29 22:49:42.944
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.google.gdt.eclipse.core 1 0 2015-09-29 22:49:53.860
+!MESSAGE Scheduled rebuild of project hw1_blog because of plugin update (current version: 3.8.0.v201410302155-rel-r44)
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 22:49:56.478
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2015-09-29 22:49:56.578
+!MESSAGE Could not check whether the launch configuration "hw1_blog" needs the -XstartOnFirstThread argument, assuming it does
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:49:58.476
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY org.tigris.subversion.clientadapter.javahl 1 0 2015-09-29 22:51:15.200
+!MESSAGE Failed to load JavaHL Library.
+These are the errors that were encountered:
+no libsvnjavahl-1 in java.library.path
+no svnjavahl-1 in java.library.path
+no svnjavahl in java.library.path
+java.library.path = /Users/shark89fish/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:51:22.459
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:51:54.643
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:52:07.250
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:52:19.791
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 22:54:24.766
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 23:09:18.791
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 23:10:08.720
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 23:12:43.360
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-09-29 23:13:07.786
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
